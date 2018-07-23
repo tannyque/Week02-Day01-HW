@@ -21,8 +21,8 @@ class CodeClanStudent
     @cohort = cohort
   end
 
-  def talk
-    return "I can talk!"
+  def set_student_to_talk(talk)
+    return talk
   end
 
   def fav_language(language)
