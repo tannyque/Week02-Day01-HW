@@ -20,4 +20,9 @@ class TestTeam < MiniTest::Test
     assert_equal("Doomhammer", @team.coach)
   end
 
+  def test_change_coach
+    @team.set_coach("Durotan")
+    assert_equal("Durotan", @team.coach())
+  end
+
 end
