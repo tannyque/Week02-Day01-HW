@@ -17,11 +17,11 @@ class TestTeam < MiniTest::Test
   end
 
   def test_getting_coach
-    assert_equal("Doomhammer", @team.coach)
+    assert_equal("Doomhammer", @team.coach())
   end
 
   def test_change_coach
-    @team.set_coach("Durotan")
+    @team.coach = "Durotan"
     assert_equal("Durotan", @team.coach())
   end
 
