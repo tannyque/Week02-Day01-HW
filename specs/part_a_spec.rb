@@ -1,5 +1,6 @@
-require('minitest/autorun')
-require_relative('../part_a.rb')
+require("minitest/autorun")
+require("MiniTest/rg")
+require_relative("../part_a.rb")
 
 class TestStudent < MiniTest::Test
 
