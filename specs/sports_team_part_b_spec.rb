@@ -29,4 +29,9 @@ class TestTeam < MiniTest::Test
     @team.new_player("Blackhand")
     assert_equal(4, @team.players().length())
   end
+
+  def test_find_player
+    assert_equal(true, @team.find_player("Thrall"))
+  end
+
 end

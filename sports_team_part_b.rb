@@ -28,4 +28,8 @@ class Team
     @players.push(name)
   end
 
+  def find_player(name)
+    @players.include?(name)
+  end
+
 end
