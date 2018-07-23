@@ -20,4 +20,9 @@ class TestCodeClanStudent < MiniTest::Test
     assert_equal("Billy", @student.name())
   end
 
+  def test_change_student_cohort()
+    @student.set_student_cohort("G6")
+    assert_equal("G6", @student.cohort())
+  end
+
 end
