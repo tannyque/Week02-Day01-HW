@@ -24,4 +24,8 @@ class Team
   #   @coach = name
   # end
 
+  def new_player(name)
+    @players.push(name)
+  end
+
 end
