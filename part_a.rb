@@ -1,4 +1,4 @@
-class CodeClanStudent
+class Student
 
   def initialize(name, cohort)
     @name = name
