@@ -4,15 +4,15 @@ require_relative('../part_a.rb')
 class TestCodeClanStudent < MiniTest::Test
 
   def setup
-    @student = CodeClanStudent.new("Dog", "K9")
+    @student = CodeClanStudent.new("Tanny", "G7")
   end
 
   def test_getting_name()
-    assert_equal("Dog", @student.name())
+    assert_equal("Tanny", @student.name())
   end
 
   def test_getting_cohort()
-    assert_equal("K9", @student.cohort())
+    assert_equal("G7", @student.cohort())
   end
 
   def test_change_student_name()
