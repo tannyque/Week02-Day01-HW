@@ -16,4 +16,8 @@ class TestTeam < MiniTest::Test
     assert_equal(["Thrall", "Garrosh", "Grommash"], @team.players())
   end
 
+  def test_getting_coach
+    assert_equal("Doomhammer", @team.coach)
+  end
+
 end
