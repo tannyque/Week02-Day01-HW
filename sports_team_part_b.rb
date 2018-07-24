@@ -2,11 +2,11 @@ class Team
 
   attr_accessor :team_name, :players, :coach, :points
 
-  def initialize(team_name, players, coach, points)
+  def initialize(team_name, players, coach)
     @team_name = team_name
     @players = players
     @coach = coach
-    @points = points
+    @points = 0
   end
 
   # def team_name
