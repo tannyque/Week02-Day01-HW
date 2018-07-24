@@ -30,7 +30,7 @@ class Team
   end
 
   def find_player(name)
-    @players.include?(name)
+    return @players.include?(name)
   end
 
   def team_won(result)
