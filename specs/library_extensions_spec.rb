@@ -49,13 +49,29 @@ class TestLibrary < MiniTest::Test
     expected_book = {
       title: "the_hobbit",
       rental_details: {
-        student: "",
+        student_name: "",
         date: ""
       }
     }
 
     actual_book = @library.find_by_title("the_hobbit")
     assert_equal(expected_book, actual_book)
+  end
+
+  def test_change_rental_details
+    @library.change_rental_details("lord_of_the_rings", "Bob", "25/12/18")
+
+    result = @library.find_by_title("lord_of_the_rings")
+
+    expected_book = {
+      title: "lord_of_the_rings",
+      rental_details: {
+        student_name: "Bob",
+        date: "25/12/18"
+      }
+    }
+
+    assert_equal(expected_book, result)
   end
 
 end

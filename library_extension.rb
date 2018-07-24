@@ -27,12 +27,18 @@ class Library
     book = {
       title: name_of_book,
       rental_details: {
-        student: "",
+        student_name: "",
         date: ""
       }
     }
 
     @books.push(book)
+  end
+
+  def change_rental_details(name_of_book, student_name, date)
+    found_book = find_by_title(name_of_book)
+    found_book[:rental_details][:student_name] = student_name
+    found_book[:rental_details][:date] = date
   end
 
 end
