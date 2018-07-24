@@ -33,4 +33,9 @@ class TestLibrary < MiniTest::Test
     assert_equal(2, result.size())
   end
 
+  def test_get_book_by_title
+    result = @library.find_by_title("lord_of_the_rings")
+    assert_equal(@book, result)
+  end
+
 end

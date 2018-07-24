@@ -10,4 +10,12 @@ class Library
     @books.push(book)
   end
 
+  def find_by_title(title)
+    for book in @books
+      if book[:title] == title
+        return book
+      end
+    end
+  end
+
 end
